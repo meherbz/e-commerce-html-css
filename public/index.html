@@ -319,6 +319,7 @@
                 align-items: baseline;
                 gap: 12px;
                 margin-bottom: 12px;
+                flex-wrap: wrap;
             }
 
             .old-price {
@@ -604,21 +605,6 @@
                 font-size: 18px;
             }
 
-            @media (max-width: 968px) {
-                .container {
-                    grid-template-columns: 1fr;
-                    margin: 20px;
-                }
-
-                .product-images {
-                    padding: 25px;
-                }
-
-                .product-info {
-                    padding: 30px 25px;
-                }
-            }
-
             .footer {
                 background: linear-gradient(135deg, #ff9a56 0%, #ff6b6b 100%);
                 color: white;
@@ -645,6 +631,262 @@
                 background: rgba(255, 255, 255, 0.3);
                 transform: translateY(-2px);
                 box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+            }
+
+            /* Mobile Responsive Styles */
+            @media (max-width: 968px) {
+                .container {
+                    grid-template-columns: 1fr;
+                    margin: 15px;
+                    border-radius: 15px;
+                }
+
+                .header {
+                    padding: 15px 20px;
+                }
+
+                .logo {
+                    font-size: 22px;
+                }
+
+                .cart-icon {
+                    right: 20px;
+                    padding: 6px 12px;
+                    font-size: 13px;
+                    gap: 6px;
+                }
+
+                .cart-icon span:first-child {
+                    display: none;
+                }
+
+                .cart-count {
+                    width: 22px;
+                    height: 22px;
+                    font-size: 11px;
+                }
+
+                .product-images {
+                    padding: 20px;
+                    flex-direction: column;
+                }
+
+                .thumbnail-list {
+                    flex-direction: row;
+                    order: 2;
+                    overflow-x: auto;
+                    gap: 8px;
+                    padding-bottom: 5px;
+                }
+
+                .thumbnail {
+                    min-width: 60px;
+                    width: 60px;
+                    height: 60px;
+                    flex-shrink: 0;
+                }
+
+                .main-image {
+                    order: 1;
+                    min-height: 280px;
+                    margin-bottom: 15px;
+                }
+
+                .main-image img {
+                    margin-left: 0;
+                }
+
+                .product-info {
+                    padding: 25px 20px;
+                }
+
+                .product-title {
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+
+                .rating {
+                    margin-bottom: 20px;
+                    flex-wrap: wrap;
+                }
+
+                .stars {
+                    font-size: 14px;
+                }
+
+                .reviews {
+                    font-size: 13px;
+                }
+
+                .flash-sale {
+                    padding: 15px 18px;
+                    gap: 12px;
+                    flex-direction: column;
+                    text-align: center;
+                }
+
+                .flash-sale-icon {
+                    font-size: 28px;
+                }
+
+                .flash-sale-text {
+                    font-size: 12px;
+                }
+
+                .countdown {
+                    justify-content: center;
+                    gap: 8px;
+                    flex-wrap: wrap;
+                }
+
+                .countdown-item {
+                    padding: 5px 10px;
+                    font-size: 12px;
+                }
+
+                .price-section {
+                    padding: 20px;
+                }
+
+                .price {
+                    font-size: 32px;
+                    gap: 10px;
+                }
+
+                .old-price {
+                    font-size: 16px;
+                }
+
+                .discount-badge {
+                    font-size: 12px;
+                    padding: 4px 10px;
+                }
+
+                .stock-status {
+                    font-size: 14px;
+                }
+
+                .delivery-info {
+                    font-size: 13px;
+                }
+
+                .product-details {
+                    padding: 15px 0;
+                    margin: 20px 0;
+                }
+
+                .detail-row {
+                    grid-template-columns: 90px 1fr;
+                    padding: 8px 0;
+                }
+
+                .detail-label,
+                .detail-value {
+                    font-size: 14px;
+                }
+
+                .options {
+                    gap: 15px;
+                }
+
+                .option-group label,
+                .quantity-selector label {
+                    font-size: 14px;
+                }
+
+                .option-btn {
+                    padding: 8px 20px;
+                    font-size: 14px;
+                }
+
+                .quantity-selector {
+                    gap: 12px;
+                }
+
+                .quantity-selector select {
+                    padding: 8px 35px 8px 12px;
+                    font-size: 14px;
+                }
+
+                .promo-code {
+                    padding: 15px;
+                }
+
+                .promo-code label {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+
+                .promo-input-wrapper {
+                    flex-direction: column;
+                }
+
+                .promo-input-wrapper input {
+                    padding: 10px 12px;
+                    font-size: 14px;
+                }
+
+                .promo-input-wrapper button {
+                    padding: 10px 24px;
+                    font-size: 14px;
+                }
+
+                .action-buttons {
+                    gap: 12px;
+                }
+
+                .btn {
+                    padding: 14px 24px;
+                    font-size: 15px;
+                }
+
+                .description {
+                    padding: 20px;
+                }
+
+                .description h3 {
+                    font-size: 16px;
+                    margin-bottom: 15px;
+                }
+
+                .description li {
+                    font-size: 14px;
+                    padding-left: 24px;
+                    margin: 10px 0;
+                }
+
+                .footer {
+                    padding: 25px 20px;
+                    margin-top: 30px;
+                }
+
+                .footer a {
+                    font-size: 14px;
+                    padding: 8px 20px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .logo {
+                    font-size: 20px;
+                }
+
+                .product-title {
+                    font-size: 18px;
+                }
+
+                .price {
+                    font-size: 28px;
+                }
+
+                .flash-sale-text {
+                    font-size: 11px;
+                    letter-spacing: 0.5px;
+                }
+
+                .main-image {
+                    min-height: 240px;
+                }
             }
         </style>
     </head>
@@ -734,14 +976,6 @@
                 </div>
 
                 <div class="product-details">
-                    <div class="detail-row">
-                        <div class="detail-label">Brand:</div>
-                        <div class="detail-value">WaveBand</div>
-                    </div>
-                    <div class="detail-row">
-                        <div class="detail-label">Color:</div>
-                        <div class="detail-value">Black</div>
-                    </div>
                     <div class="detail-row">
                         <div class="detail-label">Material:</div>
                         <div class="detail-value">Breathable Mesh Fabric</div>

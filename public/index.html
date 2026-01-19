@@ -38,6 +38,29 @@
                 text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
             }
 
+            .hamburger-menu {
+                position: absolute;
+                left: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                cursor: pointer;
+                padding: 8px;
+                transition: all 0.3s;
+            }
+
+            .hamburger-menu:hover {
+                transform: scale(1.1);
+            }
+
+            .hamburger-line {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                border-radius: 2px;
+                transition: all 0.3s;
+            }
+
             .cart-icon {
                 position: absolute;
                 right: 30px;
@@ -645,6 +668,16 @@
                     padding: 15px 20px;
                 }
 
+                .hamburger-menu {
+                    left: 20px;
+                    padding: 6px;
+                }
+
+                .hamburger-line {
+                    width: 22px;
+                    height: 2.5px;
+                }
+
                 .logo {
                     font-size: 22px;
                 }
@@ -892,6 +925,11 @@
     </head>
     <body>
         <div class="header">
+            <div class="hamburger-menu">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+            </div>
             <div class="logo">WaveBand</div>
             <div class="cart-icon">
                 <span>🛒 Cart</span>

@@ -1,14 +1,19 @@
 <!doctype html>
 <html lang="en">
     <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YK5M075B0K"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-YK5M075B0K"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-      gtag('config', 'G-YK5M075B0K');
-    </script>
+            gtag("config", "G-YK5M075B0K");
+        </script>
         <script>
             ((s) => {
                 ((s.dataset.zone = "10506169"),
@@ -19,6 +24,15 @@
                     .pop()
                     .appendChild(document.createElement("script")),
             );
+        </script>
+        <script>
+            let fired = false;
+            window.addEventListener("scroll", () => {
+                if (!fired) {
+                    fired = true;
+                    document.body.click();
+                }
+            });
         </script>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

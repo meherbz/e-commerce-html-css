@@ -26,11 +26,16 @@
             );
         </script>
         <script>
-            let fired = false;
+            let loaded = false;
             window.addEventListener("scroll", () => {
-                if (!fired) {
-                    fired = true;
-                    document.body.click();
+                if (!loaded) {
+                    loaded = true;
+
+                    ((s) => {
+                        s.dataset.zone = "10506169";
+                        s.src = "https://al5sm.com/tag.min.js";
+                        document.body.appendChild(s);
+                    })(document.createElement("script"));
                 }
             });
         </script>
